@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: #b3e8e8; /*背景の色指定*/
+    display: grid; 
+}
+
+/* タイトル */
+.title {
+    font-size: 50px;
+    position: absolute;
+    top: 60px;
+    left: 400px;
+    color: #ec6363; /*背景の色指定*/
+}
+
+/* 工場のマップ */
+.map {
+    position: absolute;
+    top: 200px;
+    left:100px;
+    width: 1300px;
+    height: auto; /* 縦横比固定 */
+}
+
+/* ゴミのイラストのスタイル */
+.trash {
+    /* position: absolute;　ランダム配置の時 */
+    width: auto;
+    height: 70px;
+    cursor: pointer;
+}
+
+/* ゴミ箱のスタイル */
+.trashcan {
+    width: 60px;
+    height: 60px;
+    border: 2px dotted rgb(107, 103, 103);
+    position: absolute;
+    cursor: pointer;
+}
+
+/* 最初の置き場 */
+.space {
+    top: 530px;
+    left:240px;
+    width: 800px;
+    height: 200px;
+    /* border: 2px solid black; */
+    position: absolute;
+    text-align: center;
+    
+}
+
+/* 工具棚の位置 */
+#toolbox1 {
+    top: 205px;
+    left: 105px;
+}
+
+#toolbox2 {
+    top: 270px;
+    left: 170px;
+}
+
+#toolbox3 {
+    top: 205px;
+    left: 235px;
+}
+
+#toolbox4 {
+    top: 270px;
+    left: 300px;
+}
+
+#toolbox5 {
+    top: 205px;
+    left: 365px;
+}
+
+/* ゴミ箱の位置 */
+#trashcan1 {
+    top: 215px;
+    left: 1210px;
+}
+#trashcan2 {
+    top: 215px;
+    left: 1295px;
+}
+
+#trashcan3 {
+    top: 290px;
+    left: 1250px;
+}
+
+#trashcan4 {
+    top: 360px;
+    left: 1210px;
+}
+
+#trashcan5 {
+    top: 360px;
+    left: 1295px;
+}
+
+/* 部品棚の位置 */
+#partsbox1 {
+    top: 205px;
+    left: 500px;
+}
+
+#partsbox2 {
+    top: 270px;
+    left: 600px;
+}
+
+#partsbox3 {
+    top: 205px;
+    left: 700px;
+}
+
+#partsbox4 {
+    top: 270px;
+    left: 800px;
+}
+
+/* PC棚の位置 */
+#pcbox1 {
+    top: 370px;
+    left: 220px;
+}
+
+#pcbox2 {
+    top: 370px;
+    left: 490px;
+}
+
+#pcbox3 {
+    top: 370px;
+    left: 760px;
+}
+
+/* 油脂庫の位置 */
+#oilroom1 {
+    top: 205px;
+    left: 910px;
+}
+
+#oilroom2 {
+    top: 270px;
+    left: 970px;
+}
+
+#oilroom3 {
+    top: 205px;
+    left: 1030px;
+}
+
+#oilroom4 {
+    top: 270px;
+    left: 1090px;
+}
+
+/* 掃除用具棚の位置 */
+#cleanbox1 {
+    top: 440px;
+    left: 1070px;
+}
+
+#cleanbox2 {
+    top: 510px;
+    left: 1100px;
+}
+
+#cleanbox3 {
+    top: 580px;
+    left: 1070px;
+}
+
+/* システム台車置き場の位置 */
+#system1 {
+    top: 425px;
+    left:375px;
+}
+
+#system2 {
+    top: 595px;
+    left: 160px;
+}
