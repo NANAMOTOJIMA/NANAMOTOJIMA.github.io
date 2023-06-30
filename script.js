@@ -13,7 +13,6 @@ function dragStart(event) {
 }
 
 //３．イラストを各枠にドロップしたときの処理
-
 //音を用意しておく
 const music = new Audio("boo.mp3");
 const music1 = new Audio("poi.mp3");
@@ -50,28 +49,19 @@ function drop(event) {
 
 //４．イラストが枠内に入ったときの処理
 function dragEnter(event) {
-    console.log("enter");
     event.preventDefault();
     // event.currentTarget.classList.add('highlight');
 }
 
-//５．イラストが枠内から出たときの処理
-function dragLeave(event) {
-    console.log("leave");
-    // event.currentTarget.classList.remove('highlight');
-}
-
-//６．枠上でドラッグオーバー時の処理
+//５．枠上でドラッグオーバー時の処理
 function dragOver(event) {
-    console.log("over");
     event.preventDefault();
 }
 
-//７.枠に関連のイベントリスナーを追加
+//６.枠に関連のイベントリスナーを追加
 trashcanElements.forEach(trashcanElement => {
     trashcanElement.addEventListener('dragenter', dragEnter);
     trashcanElement.addEventListener('dragover', dragOver);
-    trashcanElement.addEventListener('dragleave', dragLeave);
     trashcanElement.addEventListener('drop', drop);
 });
 
@@ -99,7 +89,6 @@ function showMessage(message) {
 }
 
 //９.最後のメッセージを表示する関数
-
 //音を用意しておく
 const music2 = new Audio("pafu.mp3");
 
@@ -107,7 +96,6 @@ function lastMessage(message) {
     const messageElement = document.createElement('p');
     messageElement.textContent = message;
     messageElement.style.cssText = 
-        // "margin:auto;"
         "position: absolute;"
         + "display: inline-block;"
         + "background:#FFD9D7;"
@@ -124,3 +112,45 @@ function lastMessage(message) {
     music2.currentTime = 0;
     music2.play();
 }
+
+
+
+//4Sとは・・・
+
+let start1Element = document.getElementById("start1");
+let start2Element = document.getElementById("start2");
+let start3Element = document.getElementById("start3");
+let start4Element = document.getElementById("start4");
+let end1Element = document.getElementById("end1");
+let end2Element = document.getElementById("end2");
+let end3Element = document.getElementById("end3");
+let end4Element = document.getElementById("end4");
+// new LeaderLine(
+//     document.getElementById("start1"),
+//     document.getElementById("end1")
+//   );
+// new LeaderLine(LeaderLine.mouseHoverAnchor(startElement), endElement);  
+new LeaderLine(LeaderLine.mouseHoverAnchor(start1Element), end1Element, {
+    color: '#fff',
+    outline: true,
+    endPlugOutline: true,
+    endPlugSize: 1.5
+});
+new LeaderLine(LeaderLine.mouseHoverAnchor(start2Element), end2Element, {
+    color: '#fff',
+    outline: true,
+    endPlugOutline: true,
+    endPlugSize: 1.5
+});
+new LeaderLine(LeaderLine.mouseHoverAnchor(start3Element), end3Element, {
+    color: '#fff',
+    outline: true,
+    endPlugOutline: true,
+    endPlugSize: 1.5
+});
+new LeaderLine(LeaderLine.mouseHoverAnchor(start4Element), end4Element, {
+    color: '#fff',
+    outline: true,
+    endPlugOutline: true,
+    endPlugSize: 1.5
+});
