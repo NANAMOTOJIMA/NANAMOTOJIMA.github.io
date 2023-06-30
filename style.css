@@ -10,11 +10,21 @@ body {
 }
 
 /* タイトル */
-.title {
+.title1 {
     font-size: 50px;
+    width: 800px;
     position: absolute;
     top: 60px;
     left: 400px;
+    color: #ec6363; /*背景の色指定*/
+}
+
+.title2 {
+    font-size: 50px;
+    width: 1200px;
+    position: absolute;
+    top: 800px;
+    left: 100px;
     color: #ec6363; /*背景の色指定*/
 }
 
@@ -190,4 +200,59 @@ body {
 #system2 {
     top: 595px;
     left: 160px;
+}
+
+
+/* ゴミ箱のスタイル */
+.start {
+    font-size: 40px;
+    width: 120px;
+    border: 10px rgb(221, 76, 221);
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+}
+.end {
+    font-size: 25px;
+    width: 760px;
+    border: 10px dotted (221, 76, 221);
+    position: absolute;
+    cursor: pointer;
+    /* text-align: center; */
+}
+
+
+#start1 {
+    top: 900px;
+    left: 160px;
+}
+#start2 {
+    top: 1000px;
+    left: 160px;
+}
+#start3 {
+    top: 1100px;
+    left: 160px;
+}
+#start4 {
+    top: 1200px;
+    left: 160px;
+}
+
+
+#end1 {
+    top: 1100px;
+    left: 500px;
+}
+#end2 {
+    top: 900px;
+    left: 500px;
+}
+#end3 {
+    top: 1200px;
+    left: 500px;
+}
+#end4 {
+    top: 1000px;
+    left: 500px;
 }
